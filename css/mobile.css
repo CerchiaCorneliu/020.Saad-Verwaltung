@@ -1,0 +1,1128 @@
+@media screen and (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ------------------------------- HEADER ------------------------------- */
+  .header {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    max-height: 1600px;
+    position: relative;
+    margin-bottom: -5px;
+    overflow: hidden;
+  }
+
+  .container_header {
+    margin: 0px auto;
+    width: 90%;
+  }
+
+  .header #image img {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    max-height: 1600px;
+  }
+
+  .header #opacity {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    max-height: 1600px;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(78, 148, 87, 0.3);
+  }
+
+  #logo {
+    position: absolute;
+    top: 6.25%;
+    width: 20%;
+  }
+
+  #logo img {
+    width: 100%;
+  }
+
+  #navlink_desktop {
+    display: none;
+  }
+
+  #navlink_mobile {
+    position: absolute;
+    top: 20%;
+    width: 90%;
+    display: none;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .header a.icon {
+    display: block;
+    position: absolute;
+    right: 5.5%;
+    top: 6.25%;
+    color: white;
+    font-size: 4vw;
+  }
+
+  .header a.icon:hover {
+    color: #4e9457;
+  }
+
+  #navlink_mobile a:first-child {
+    border-top: 1px solid black;
+  }
+
+  #navlink_mobile a {
+    background-color: white;
+    display: block;
+    padding: 2% 0%;
+    font-size: 1.7vw;
+    letter-spacing: 2px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: black;
+    list-style: none;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  #navlink_mobile a:hover {
+    color: #4e9457;
+  }
+
+  #logo_name {
+    position: absolute;
+    top: 38%;
+    left: 28%;
+    text-align: center;
+  }
+
+  #logo_name h1 {
+    font-size: 5.5vw;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #wrapper {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  button.scroll_down {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 30px;
+    bottom: 60px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  button.scroll_down:before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: scroll_down_btn-animation 2s infinite;
+    animation: scroll_down_btn-animation 2s infinite;
+    box-sizing: border-box;
+  }
+
+  @keyframes scroll_down_btn-animation {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes scroll_down_btn-animation {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* ------------------------------- CONTENT ------------------------------- */
+  .content {
+    width: 100%;
+    max-width: 2560px;
+    margin: 0px auto;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  /* ------------------------------- Our Group ------------------------------- */
+  #our_group {
+    width: 100%;
+    max-width: 768px;
+    height: 700px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #our_group img {
+    display: none;
+  }
+
+  #our_group h1 {
+    position: absolute;
+    top: 10%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 4.8vw;
+    text-align: center;
+    color: #4e9457;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #comp {
+    position: absolute;
+    top: 28%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #comp p {
+    font-size: 2.5vw;
+    color: #000000;
+    font-family: "Raleway";
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .companies {
+    margin: 0% 8%;
+    display: inline-block;
+  }
+
+  .companies ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .companies ul li {
+    font-size: 1.4vw;
+    letter-spacing: 2px;
+    line-height: 220%;
+    color: #959595;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  #description {
+    position: absolute;
+    top: 58%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+  }
+
+  #description p {
+    font-size: 1.8vw;
+    line-height: 200%;
+    color: #000000;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #our_group button {
+    margin: 0px auto;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: 80%;
+    width: 30%;
+    height: 6%;
+    background-color: #4e9457;
+    line-height:0.5em;
+    border:none;
+  }
+
+  #our_group button:focus {
+    outline: none !important;
+    color: #ffffff;
+  }
+
+  #our_group button a {
+    font-size: 1.7vw;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  #our_group #button_hr {
+    display: none;
+  }
+
+  /* ------------------------------- Services ------------------------------- */
+  #services {
+    width: 100%;
+    max-width: 768px;
+    height: 1000px;
+    background-color: #4e9457;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #services img {
+    display: none;
+  }
+
+  #services h1 {
+    position: absolute;
+    top: 7%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 4.8vw;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #area1 {
+    position: absolute;
+    top: 20%;
+    width: 78%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    height: 16%;
+    padding: 4%;
+  }
+
+  #area2 {
+    position: absolute;
+    top: 43.5%;
+    width: 78%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    height: 16%;
+    padding: 4%;
+  }
+
+  #area3 {
+    position: absolute;
+    top: 67%;
+    width: 78%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    height: 16%;
+    padding: 4%;
+  }
+
+  .area:hover {
+    background-color: white;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .area p {
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    line-height: 2%;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+  }
+  .area:hover p {
+    color: grey;
+  }
+
+  .area h2 {
+    font-size: 3vw;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+  .area:hover h2 {
+    color: #4e9457;
+  }
+
+  .area hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #ffffff;
+  }
+  .area:hover hr {
+    background-color: #000000;
+  }
+
+  .area .info ul {
+    margin-top: 4%;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .area ul li {
+    font-size: 1.7vw;
+    line-height: 100%;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+    margin-bottom: 2%;
+  }
+  .area:hover li {
+    color: #000000;
+  }
+
+  .area i {
+    padding-right: 5%;
+    font-size: 1.6vw;
+  }
+
+  .area:hover i {
+    color: #000000;
+  }
+
+  /* ------------------------------- Our team ------------------------------- */
+  #our_team {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    height: 1500px;
+    background-color: white;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #our_team #our_team_bg {
+    display: none;
+  }
+
+  #our_team h1 {
+    position: absolute;
+    top: 4%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 4.8vw;
+    text-align: center;
+    color: #4e9457;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #team_section1 {
+    position: absolute;
+    top: 20%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    max-height: 500px;
+  }
+
+  #team_section2 {
+    position: absolute;
+    top: 45%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    max-height: 500px;
+  }
+
+  #team_section3 {
+    position: absolute;
+    top: 70%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    max-height: 500px;
+  }
+
+  .char {
+    width: 30%;
+    max-height: 300px;
+    margin-left: 10%;
+    float: left;
+  }
+
+  .char:last-child {
+    width: 30%;
+    max-height: 500px;
+    margin-top: 15%;
+    margin-right: 10%;
+    float: right;
+  }
+
+  .char img {
+    width: 100%;
+    max-width: 440px;
+    height: 100%;
+    max-height: 440px;
+  }
+
+  .char h4 {
+    font-size: 2.5vw;
+    color: #343434;
+    font-family: "Raleway";
+    font-weight: 500;
+    margin: 11% 0% 0% 14%;
+  }
+
+  .char p {
+    font-size: 1.4vw;
+    letter-spacing: 2px;
+    line-height: 200%;
+    color: #959595;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2% 0% 55% 13%;
+  }
+
+  /* ------------------------------- References ------------------------------- */
+  #references {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    max-height: 1420px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -4px;
+  }
+
+  #references img {
+    width: 100%;
+    max-width: 2560px;
+    height: 100%;
+    max-height: 1420px;
+  }
+
+  #references #opacity {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    max-width: 2560px;
+    height: 100%;
+    max-height: 1420px;
+    background-color: rgba(49, 49, 49, 0.5);
+  }
+
+  #references h1 {
+    position: absolute;
+    top: 15%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 4.8vw;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #references button {
+    margin: 0px auto;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: 75%;
+    width: 30%;
+    height: 10%;
+    background-color: #4e9457;
+    line-height:0.5em;
+    border:none;
+  }
+
+  #references button a {
+    font-size: 1.7vw;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  #references button:focus {
+    outline: none !important;
+    color: #ffffff;
+  }
+
+  #references #desc {
+    position: absolute;
+    top: 35%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+  }
+
+  #references #desc p {
+    font-size: 1.8vw;
+    line-height: 150%;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  /* ------------------------------- Impressum ------------------------------- */
+  #impressum {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    max-height: 1600px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -4px;
+  }
+
+  #impressum img {
+    width: 100%;
+    max-width: 2560px;
+    height: 100%;
+    max-height: 1600px;
+  }
+
+  #impressum h1 {
+    position: absolute;
+    top: 16%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 4.8vw;
+    text-align: center;
+    color: #4e9457;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #impressum #text {
+    position: absolute;
+    top: 45%;
+    width: 45%;
+  }
+
+  #impressum #text p {
+    width: 100%;
+    font-size: 1.4vw;
+    line-height: 150%;
+    color: #959595;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #impressum #text a {
+    text-decoration: none;
+    color: #959595;
+  }
+
+  #impressum #info {
+    position: absolute;
+    top: 34%;
+    left: 60%;
+    width: 25%;
+  }
+
+  #impressum #info h4 {
+    font-size: 1.8vw;
+    color: #343434;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #impressum #info #location p {
+    margin-top: -5%;
+    width: 80%;
+    font-size: 1.4vw;
+    line-height: 190%;
+    color: #343434;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #impressum #info #contactme {
+    margin-top: 10%;
+  }
+
+  #contactme p {
+    width: 100%;
+    font-size: 1.4vw;
+    line-height: 100%;
+    color: #959595;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #impressum #info span {
+    color: #343434;
+  }
+
+  #impressum #info #contactme a {
+    text-decoration: none;
+    color: #343434;
+  }
+
+  #impressum #info #tax {
+    margin-top: 17%;
+  }
+
+  #impressum #info #tax p {
+    width: 100%;
+    font-size: 1.4vw;
+    line-height: 100%;
+    color: #959595;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #impressum hr {
+    position: absolute;
+    border: 1px solid black;
+    top: 98.0%;
+    width: 80%;
+    height: 0.4%;
+    background-color: #000000;
+    z-index: 1;
+  }
+
+  /* ------------------------------- Contact ------------------------------- */
+  #contact {
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    height: 1000px;
+    margin: 0px auto;
+    overflow: hidden;
+    margin-bottom: -2px;
+  }
+
+  #contact #impressum_bg {
+    display: none;
+  }
+
+  #contact h1 {
+    position: absolute;
+    top: 7%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 4.8vw;
+    text-align: center;
+    color: #4e9457;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #contact #form {
+    position: absolute;
+    top: 25%;
+    width: 85%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #form form {
+    width: 93%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #form input {
+    display: block;
+    width: 100%;
+    max-height: 130px;
+    padding: 1% 0%;
+    border: none;
+    border-bottom: 1px solid #343434;
+    font-size: 2vw;
+    color: #959595;
+    font-family: "Raleway";
+    font-weight: 500;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+  }
+
+  #form textarea {
+    width: 100%;
+    max-height: 500px;
+    border: none;
+    border-bottom: 1px solid #343434;
+    font-size: 2vw;
+    color: #959595;
+    font-family: "Raleway";
+    font-weight: 500;
+    margin-bottom: 15%;
+    padding-top: 1%;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  #form input:focus {
+    outline: none !important;
+    border-bottom: 1px solid #4e9457;
+    color: #000000;
+  }
+
+  #form textarea:focus {
+    outline: none !important;
+    border-bottom: 1px solid #4e9457;
+    color: #000000;
+  }
+
+  #form button {
+    margin: 0px auto;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: 85%;
+    width: 35%;
+    height: 11%;
+    line-height:0.5em;
+    background-color: #4e9457;
+    border:none;
+  }
+
+  #form button a {
+    font-size: 1.7vw;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  #form button:focus {
+    outline: none !important;
+    color: #ffffff;
+  }
+
+  #contact #image {
+    width: 27.4%;
+    position: absolute;
+    top: 70%;
+  }
+
+  #contact #image img {
+    width: 100%;
+    max-height: 700px;
+  }
+
+  #contact #social {
+    width: 47%;
+    position: absolute;
+    top: 72%;
+    left: 45%;
+  }
+
+  #contact #social p {
+    width: 100%;
+    font-size: 1.8vw;
+    line-height: 150%;
+    color: #000000;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #social #social_links {
+    width: 100%;
+    margin-top: 16%;
+  }
+
+  #social #social_links p {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    letter-spacing: 2px;
+    line-height: 100%;
+    color: #959595;
+    font-family: "Montserrat";
+    font-weight: 600;
+    padding-right: 18%;
+  }
+
+  #social #social_links p:last-child {
+    padding-right: 0%;
+  }
+
+  #social #social_links a {
+    text-decoration: none;
+    color: #959595;
+  }
+
+  /* ------------------------------- FOOTER ------------------------------- */
+  .footer {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    height: 300px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -4px;
+    background-color: #4e9457;
+  }
+
+  .footer #footer_bg {
+    display: none;
+  }
+
+  .footer p {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: 10%;
+    width: 85%;
+    font-size: 1.8vw;
+    line-height: 200%;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  .footer #subscribe_form {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: 30%;
+    width: 85%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  #subscribe_form input {
+    width: 90%;
+    max-height: 130px;
+    padding: 1% 0%;
+    border:none;
+    background-color: #4e9457;
+    font-size: 2vw;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  #subscribe_form ::placeholder {
+    color: #ffffff;
+  }
+
+  #subscribe_form input:focus {
+    outline: none !important;
+    color: #ffffff;
+  }
+
+  #subscribe_form button {
+    background-color: #4e9457;
+    width: 8%;
+    max-height: 125px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #subscribe_form button:focus {
+    outline: none !important;
+    color: #ffffff;
+  }
+
+  #subscribe_form i {
+    color: white;
+    font-size: 1.8vw;
+    padding-left: 80%;
+  }
+
+  .footer #logo {
+    position: absolute;
+    top: 5%;
+    width: 10%;
+  }
+
+  #logo img {
+    width: 100%;
+  }
+
+  .footer #navlink {
+    position: absolute;
+    top: 46%;
+    left: 70%;
+    width: 20%;
+    text-align: right;
+  }
+
+  .footer #navlink a {
+    display: block;
+    font-size: 1.9vw;
+    line-height: 200%;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  /* ------------------------------- BASE ------------------------------- */
+
+  .base {
+    width: 100%;
+    max-width: 2560px;
+    height: 100%;
+    max-height: 150px;
+    margin: 0px auto;
+    position: relative;
+    /* background-color: #66ad70; */
+  }
+
+  .base img {
+    width: 100%;
+    max-width: 2560px;
+    height: 100%;
+    max-height: 150px;
+    margin-bottom: -5px;
+  }
+
+  .base p {
+    font-size: 1.8vw;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+
+  .alignleft {
+    position: absolute;
+    top: 1%;
+    left: 8%;
+  }
+  .alignleft a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .alignright {
+    position: absolute;
+    top: 1%;
+    right: 8%;
+  }
+}

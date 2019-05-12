@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Verwaltung_Homepage</title>
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="header">
+      <div id="image">
+        <img src="img/Rectangle 1.png" alt="Rectangle 1">
+      </div>
+      <div id="opacity"></div>
+      <div class="container_header">
+        <div id="logo">
+          <a href="Saad Verwaltung_Homepage.html"><img src="img/Logo.png" alt="Logo"></a>
+        </div>
+        <div id="navlink_desktop">
+          <a href="#our_group">our group</a>
+    	    <a href="#services">our services</a>
+    	    <a href="#our_team">our team</a>
+          <a href="#references">references</a>
+          <a href="#impressum">impressum</a>
+          <a href="#contact">contact</a>
+        </div>
+        <div id="navlink_mobile">
+          <a href="#our_group">our group</a>
+    	    <a href="#services">our services</a>
+    	    <a href="#our_team">our team</a>
+          <a href="#references">references</a>
+          <a href="#impressum">impressum</a>
+          <a href="#contact">contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("navlink_mobile");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
+        <div id="logo_name">
+          <h1>Saad Verwaltung</h1>
+        </div>
+        <div id="wrapper">
+          <button type="button" class="scroll_down" id="scroll_down"></button>
+        </div>
+        <script>
+        (function() {
+          'use strict';
+          var btnScrollDown = document.querySelector('#scroll_down');
+          function scrollDown() {
+            var windowCoords = document.documentElement.clientHeight;
+            (function scroll() {
+              if (window.pageYOffset < windowCoords) {
+                window.scrollBy(0, 10);
+                setTimeout(scroll, 0);
+              }
+              if (window.pageYOffset > windowCoords) {
+                window.scrollTo(0, windowCoords);
+              }
+            })();
+          }
+          btnScrollDown.addEventListener('click', scrollDown);
+          })();
+        </script>
+      </div>
+    </div>
+
+
+    <div class="content">
+      <div id="our_group">
+        <img src="img/our_group.png" alt="Our Group">
+        <div class="container">
+          <h1>Duis semper et eget onare aliquam, mauris consequat vel.</h1>
+          <div id="comp">
+            <p>Companies in holding</p>
+            <div class="companies">
+              <ul>
+                <li>pellentesque imperdiet</li>
+                <li>tempus sapien Co</li>
+                <li>consequat aristique</li>
+                <li>vestibulum tellus</li>
+                <li>condimentum tempus</li>
+              </ul>
+            </div>
+            <div class="companies">
+              <ul>
+                <li>pelleque imperdiet</li>
+                <li>tempus sapien Co</li>
+                <li>consequat aristique</li>
+                <li>vestibulum tellus</li>
+                <li>condimentum tempus</li>
+              </ul>
+            </div>
+          </div>
+          <div id="description">
+            <p>Proin suscipit massa sit amet accumsan luctus.
+            Aliquam eu maxim ipsum. Suspendisse potenti.
+            Donec vehicula tellus vel erat pusuere convallis.
+            Curabitur feugiat nec diam vel maximus. Morbi vitae velit enim. Integer vel scelerisque sapien, sad feugiat libero.Fusce vestibulum sapien in felis condimentum, at dictum mi volutpat. Ut eu nuncnulla. Vestibulum eu sit amet magna elit.</p>
+          </div>
+          <button type="button" name="button"><a href="#contact">get in touch</a></button>
+          <hr id="button_hr">
+        </div>
+      </div>
+
+      <div id="services">
+        <img src="img/services.png" alt="Services">
+        <div class="container">
+          <h1>Our tasks are divided into three areas</h1>
+          <div class="area" id="area1">
+            <p>service 01</p>
+            <h2>Commercial Care</h2>
+            <hr>
+            <div class="info">
+              <ul>
+                <li><i class="fa fa-plus"></i>Invoice control and instruction</li>
+                <li><i class="fa fa-plus"></i>Caretaker guidance and control based on a clear list of service</li>
+                <li><i class="fa fa-plus"></i>Invitations to and organization of owner meetings, meeting minutes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="area" id="area2">
+            <p>service 02</p>
+            <h2>Legal support</h2>
+            <hr>
+            <div class="info">
+              <ul>
+                <li><i class="fa fa-plus"></i>Supervision of contracts with contract partners such as insurance</li>
+                <li><i class="fa fa-plus"></i>Close and successful cooperation with three specialized lawyers for residential property</li>
+                <li><i class="fa fa-plus"></i>Specialized lawyer in the house for the demand of house jail sentences</li>
+              </ul>
+            </div>
+          </div>
+          <div class="area" id="area3">
+            <p>service 03</p>
+            <h2>Technical support</h2>
+            <hr>
+            <div class="info">
+              <ul>
+                <li><i class="fa fa-plus"></i>Regular object inspection</li>
+                <li><i class="fa fa-plus"></i>Regular technical check for value maintenance as well as for early damage detection</li>
+                <li><i class="fa fa-plus"></i>Ongoing maintenance and repair</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="our_team">
+        <img id="our_team_bg" src="img/our_team.png" alt="Our Team">
+        <div class="container">
+          <h1>Our team is composed of professional real estate managers</h1>
+          <div id="team_section1">
+            <div class="char">
+              <img src="img/Layer 1.png" alt="Rectangle 4">
+              <h4>Anna Saad</h4>
+              <p>Geschäftsführer</p>
+            </div>
+            <div class="char">
+              <img src="img/Layer 5.png" alt="Rectangle 4">
+              <h4>Leone Heimirich</h4>
+              <p>Curabitur tortor</p>
+            </div>
+          </div>
+          <div id="team_section2">
+            <div class="char">
+              <img src="img/Layer 7.png" alt="Rectangle 4">
+              <h4>Hachiro Esmond</h4>
+              <p>Curabitur tortor</p>
+            </div>
+            <div class="char">
+              <img src="img/Layer 6.png" alt="Rectangle 4">
+              <h4>Rosmunda Milly</h4>
+              <p>Curabitur tortor</p>
+            </div>
+          </div>
+          <div id="team_section3">
+            <div class="char">
+              <img src="img/Layer 3.png" alt="Rectangle 4">
+              <h4>Milko Hayati</h4>
+              <p>Curabitur tortor</p>
+            </div>
+            <div class="char">
+              <img src="img/Layer 4.png" alt="Rectangle 4">
+              <h4>Natsumi Alica</h4>
+              <p>Curabitur tortor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="references">
+        <img src="img/Rectangle 5.png" alt="reference">
+        <div id="opacity"></div>
+        <div class="container">
+          <h1>Quality that you can count on!</h1>
+          <button type="button" name="button"><a href="#contact">get in touch</a></button>
+          <div id="desc">
+            <p>Proin suscipit massa sit amet accumsan luctus. Aliquam eu maxim ipsum. Suspendisse potenti. Donec vehicula tellus vel erat pusuere convallis. Curabitur feugiat nec diam vel maximus. Morbi vitae velit enim. Vestibulum eu sit amet magna elit.</p>
+            <p>Integer vel scelerisque sapien, sed feugiat libero. Fusce vestibulum sapien in felis condimentum, at dictum mi volutpat. Ut eu nunc nulla.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="impressum">
+        <img id="impressum_bg" src="img/impressum.png" alt="Impressum">
+        <div class="container">
+          <h1>Impressum</h1>
+          <div id="text">
+            <p>Consumer Information on Alternative Dispute Resolution</p>
+            <p>(Art 14 (1) CDR_VO and 5 36VSBG</p>
+            <p>The internet platform of the European Union concerning the online dispute resolution (so-called "ODR platform") is available via thr following link.</p>
+            <p><a href="http://ec.europa.eu/consumer/odr" target="_blank">http://ec.europa.eu/consumer/odr</a></p>
+            <p>We do not participate in dispute resolution procedures before consumer arbitration bodies.</p>
+          </div>
+          <div id="info">
+            <div id="location">
+              <h4>Location</h4>
+              <p>Olpener Straße 61 51766 Engelskirchen</p>
+            </div>
+            <div id="contactme">
+              <h4>Contact</h4>
+              <p>Tel: <span>02263 9296870</span></p>
+              <p>Fax: <span>02263 9296879</span></p>
+              <p>Email: <span><a href="mailto:info@saad-verwaltung.com?Subject=Hello%20again" target="_top">info@saad-verwaltung.com</a></span></p>
+              <p>Geschäftsführer: <span>Anis Saad</span></p>
+            </div>
+            <div id="tax">
+              <p>Steuer-Nr: <span>212/5711/2160</span></p>
+              <p>HRB: <span>95348</span></p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <div id="contact">
+        <img src="img/contact.png" alt="Contact">
+        <div class="container">
+          <h1>Let’s establish <br>a strong connection</h1>
+          <div id="form">
+            <form>
+              <input type="text" name="name" placeholder="Enter your name">
+              <input type="text" name="email" placeholder="Enter your email">
+              <input type="number" name="phone" placeholder="Enter your phone">
+              <textarea rows="8" cols="50" placeholder="Enter your message"></textarea>
+              <button type="submit" name="submit"><a href="#contact">get in touch</a></button>
+            </form>
+          </div>
+          <div id="image">
+            <img src="img/Rectangle 7.png" alt="Rectangle 7">
+          </div>
+          <div id="social">
+            <p>Proin suscipit massa sit amet accumsan luctus. Aliquam eu maximus ipsum. Suspendisse potenti. Donec vehicula tellus vel erat posuere convallis.</p>
+            <div id="social_links">
+              <p><a href="https://www.facebook.com/" target="_blank">facebook</a></p>
+              <p><a href="https://twitter.com/" target="_blank">twitter</a></p>
+              <p><a href="https://www.linkedin.com/" target="_blank">linkedin</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <img id="footer_bg" src="img/footer.png" alt="Footer">
+      <div class="container">
+        <p>Get updated from everywhere. Subscribe to our newsletter for the latest news and special offers.</p>
+        <form id="subscribe_form">
+          <input type="text" name="email" placeholder="Enter email for subscription">
+          <button type="submit" name="button"><i class="fa fa-arrow-right"><a href="#"></a></i></button>
+        </form>
+        <div id="logo">
+          <img src="img/Icon.png" alt="Icon">
+        </div>
+        <div id="navlink">
+          <a href="#our_group">our group</a>
+          <a href="#our_team">our team</a>
+          <a href="#references">references</a>
+          <a href="#impressum">impressum</a>
+          <a href="#contact">contact</a></li>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="base">
+      <img src="img/base.png" alt="Base">
+      <div class="container">
+        <p class="alignleft">Designed by <a href="https://www.artdynasty.com/" target="_blank">Art Dynasty</a></p>
+        <p class="alignright">Copyright © 2019 Saad Verwaltung. All rights reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
