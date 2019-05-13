@@ -22,3 +22,4 @@ May 11st 2019
 
 May 12nd 2019
 	CSS Responsive/JS: 8:00 - 15:00
+
