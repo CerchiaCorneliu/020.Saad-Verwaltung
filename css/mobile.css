@@ -157,14 +157,16 @@
 
   @keyframes scroll_down_btn-animation {
     0% {
-      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
       opacity: 0;
     }
     40% {
       opacity: 1;
     }
     80% {
-      transform: translate(0, 20px);
+      -webkit-transform: translate(0, 20px);
+              transform: translate(0, 20px);
       opacity: 0;
     }
     100% {
@@ -1021,6 +1023,22 @@
     color: #ffffff;
     font-family: "Raleway";
     font-weight: 500;
+  }
+
+  #subscribe_form ::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+
+  #subscribe_form ::-moz-placeholder {
+    color: #ffffff;
+  }
+
+  #subscribe_form :-ms-input-placeholder {
+    color: #ffffff;
+  }
+
+  #subscribe_form ::-ms-input-placeholder {
+    color: #ffffff;
   }
 
   #subscribe_form ::placeholder {
