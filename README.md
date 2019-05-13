@@ -1,6 +1,6 @@
 # 020.Saad-Verwaltung
 
-Working Hours
+Working hours
 
 May 6th 2019
 	HTML: 8:00 - 10:00, 14:00 - 15:00
