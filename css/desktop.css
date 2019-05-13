@@ -57,17 +57,13 @@
   #navlink_desktop {
     position: absolute;
     top: 8%;
-    left: 27%;
-    width: 66%;
-  }
-
-  .header a.icon {
-    display: none;
+    left: 26%;
+    width: 68.5%;
   }
 
   #navlink_desktop a {
-    display: inline-block;
-    padding-left: 5.2%;
+    display: inline;
+    padding-left: 5.7%;
     font-size: 0.89vw;
     letter-spacing: 2px;
     color: #ffffff;
@@ -85,6 +81,10 @@
     visibility: hidden;
     position: absolute;
     top: 90%;
+  }
+
+  .header a.icon {
+    display: none;
   }
 
   #logo_name {
