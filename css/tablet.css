@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   html {
     scroll-behavior: smooth;
   }
@@ -30,8 +30,8 @@
   .crop.crop-left img { width: 140%; margin: 0 0 0 -40%; }
   .crop.crop-horizontally img { width: 180%; margin: 0 -20%; }
   .crop.crop-square img {
-    width: 259.5%;
-    margin: 0 0 0 -79.75%;
+    width: 300%;
+    margin: 0 0 0 -75%;
   }
 
   /* ------------------------------- HEADER ------------------------------- */
@@ -96,8 +96,8 @@
   #navlink_mobile a {
     background-color: white;
     display: block;
-    padding: 2% 0%;
-    font-size: 1.7vw;
+    padding: 3% 0%;
+    font-size: 2.5vw;
     letter-spacing: 2px;
     font-family: "Montserrat";
     font-weight: 600;
@@ -114,7 +114,7 @@
 
   #logo_name {
     position: absolute;
-    top: 25%;
+    top: 30%;
     text-align: center;
   }
 
@@ -139,22 +139,22 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    height: 50px;
-    width: 30px;
+    height: 80px;
+    width: 50px;
     bottom: 60px;
     background-color: transparent;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     outline: none;
   }
   button.scroll_down:before {
     position: absolute;
-    top: 10px;
-    left: 50%;
+    top: 20px;
+    left: 47%;
     content: '';
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     margin-left: -3px;
     background-color: #fff;
     border-radius: 100%;
@@ -173,8 +173,8 @@
       opacity: 1;
     }
     80% {
-      -webkit-transform: translate(0, 20px);
-              transform: translate(0, 20px);
+      -webkit-transform: translate(0, 30px);
+              transform: translate(0, 30px);
       opacity: 0;
     }
     100% {
@@ -273,13 +273,9 @@
     font-weight: 500;
   }
 
-  .content a {
-    padding-left: 0%;
-  }
-
   .content button {
     width: 50%;
-    height: 4.3%;
+    height: 100px;
     background-color: #4e9457;
     left:0;
     right:0;
@@ -287,16 +283,14 @@
     margin-right:auto;
     margin: 0px auto;
     border:none;
-    line-height:0.5em;
   }
 
   .content button:focus {
     outline: none !important;
-    color: #ffffff;
   }
 
-  a {
-    font-size: 1.9vw;
+  .content a {
+    font-size: 3vw;
     letter-spacing: 2px;
     color: #ffffff;
     font-family: "Montserrat";
@@ -321,8 +315,8 @@
 
   #comp {
     position: absolute;
-    top: 26%;
     width: 85%;
+    top: 26%;
     left:0;
     right:0;
     margin-left:auto;
@@ -365,40 +359,27 @@
     display: none;
   }
 
-  #area1 {
+  .area {
     position: absolute;
-    top: 18%;
     width: 75%;
     left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
-    height: 21%;
-    padding: 4%;
+    height: 20%;
+    padding: 5%;
+  }
+
+  #area1 {
+    top: 18%;
   }
 
   #area2 {
-    position: absolute;
     top: 45%;
-    width: 75%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    height: 21%;
-    padding: 4%;
   }
 
   #area3 {
-    position: absolute;
     top: 72%;
-    width: 75%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    height: 21%;
-    padding: 4%;
   }
 
   .area:hover {
@@ -434,7 +415,7 @@
 
   .area hr {
     width: 100%;
-    height: 1px;
+    height: 2px;
     border: none;
     background-color: #ffffff;
   }
@@ -523,8 +504,7 @@
   }
 
   #references .crop {
-    height: 1800px;
-    width: 170%;
+    height: 1200px;
   }
 
   #references #opacity {
@@ -535,14 +515,19 @@
     background-color: rgba(49, 49, 49, 0.5);
   }
 
+  #references h1 {
+    position: absolute;
+    top: 7%;
+  }
+
   #references button {
     position: absolute;
-    top: 85%;
+    top: 80%;
   }
 
   #references #desc {
     position: absolute;
-    top: 33%;
+    top: 30%;
     width: 85%;
     left:0;
     right:0;
@@ -634,7 +619,7 @@
     position: absolute;
     top: 100%;
     width: 85%;
-    height: 1px;
+    height: 2px;
     left:0;
     right:0;
     margin-left:auto;
@@ -656,16 +641,8 @@
 
   #contact #form {
     position: absolute;
-    top: 30%;
+    top: 22%;
     width: 85%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  #form form {
-    width: 93%;
     left:0;
     right:0;
     margin-left:auto;
@@ -675,10 +652,10 @@
   #form input {
     display: block;
     width: 100%;
-    max-height: 130px;
+    height: 70px;
     padding: 1% 0%;
     border: none;
-    border-bottom: 1px solid #343434;
+    border-bottom: 2px solid #343434;
     font-size: 3vw;
     color: #959595;
     font-family: "Raleway";
@@ -702,7 +679,7 @@
   #form textarea {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #343434;
+    border-bottom: 2px solid #343434;
     font-size: 3vw;
     color: #959595;
     font-family: "Raleway";
@@ -714,13 +691,13 @@
 
   #form input:focus {
     outline: none !important;
-    border-bottom: 1px solid #4e9457;
+    border-bottom: 2px solid #4e9457;
     color: #000000;
   }
 
   #form textarea:focus {
     outline: none !important;
-    border-bottom: 1px solid #4e9457;
+    border-bottom: 2px solid #4e9457;
     color: #000000;
   }
 
@@ -728,12 +705,7 @@
     position: absolute;
     top: 95%;
     width: 60%;
-    height: 10%;
-  }
-
-  #form button:focus {
-    outline: none !important;
-    color: #ffffff;
+    height: 100px;
   }
 
   #contact #image {
@@ -764,6 +736,7 @@
   }
 
   #social_links a {
+    font-size: 2vw;
     text-decoration: none;
     color: #959595;
     padding-left: 6%;
@@ -806,13 +779,13 @@
     margin-right:auto;
     top: 30%;
     width: 85%;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
   }
 
   #subscribe_form input {
     width: 90%;
     max-height: 130px;
-    padding: 1% 0%;
+    padding: 3% 0%;
     border:none;
     background-color: #4e9457;
     font-size: 3vw;
@@ -827,7 +800,6 @@
 
   #subscribe_form input:focus {
     outline: none !important;
-    color: #ffffff;
   }
 
   #subscribe_form button {
@@ -838,34 +810,33 @@
     cursor: pointer;
   }
 
-  #subscribe_form button:focus {
-    outline: none !important;
-    color: #ffffff;
-  }
-
   #subscribe_form i {
     color: white;
-    font-size: 2.5vw;
-    padding-left: 80%;
+    font-size: 4vw;
+    padding-left: 65%;
   }
 
   .footer #logo {
     position: absolute;
-    top: 52%;
+    top: 55%;
     width: 15%;
   }
 
   .footer #navlink {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 70%;
     width: 20%;
     text-align: right;
   }
 
   .footer #navlink a {
+    text-decoration: none;
+    text-transform: uppercase;
     display: block;
     line-height: 200%;
+    font-size: 2vw;
+    font-weight: 600;
     color: #ffffff;
   }
 
@@ -881,7 +852,7 @@
     margin-bottom: -5px;
   }
 
-  .base p {
+  .base .p2 {
     font-size: 1.8vw;
     color: #ffffff;
   }
@@ -892,10 +863,11 @@
     left: 8%;
   }
   .alignleft a {
+    text-decoration: none;
     text-transform: none;
     color: #ffffff;
     font-family: "Raleway";
-    font-size: 1.7vw;
+    font-size: 1.8vw;
   }
 
   .alignright {

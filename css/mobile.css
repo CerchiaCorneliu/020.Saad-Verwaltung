@@ -5,33 +5,8 @@
   body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    max-width: 1024px;
+    max-width: 768px;
     margin: 0 auto;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  .crop {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-  .crop img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-  }
-  .crop.crop-top img { margin: -10% auto 0; }
-  .crop-bottom img { margin: 0 auto -10%; }
-  .crop.crop-vertically img { margin: -9% auto; }
-  .crop.crop-right img { width: 140%; }
-  .crop.crop-left img { width: 140%; margin: 0 0 0 -40%; }
-  .crop.crop-horizontally img { width: 180%; margin: 0 -20%; }
-  .crop.crop-square img {
-    width: 259.5%;
-    margin: 0 0 0 -79.75%;
   }
 
   /* ------------------------------- HEADER ------------------------------- */
@@ -41,262 +16,69 @@
 
   .container_header {
     margin: 0px auto;
-    width: 90%;
+    width: 100%;
   }
 
   .header .crop {
-    height: 1000px;
-  }
-
-  .header #opacity {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    background-color: rgba(78, 148, 87, 0.3);
+    height: 900px;
   }
 
   #logo {
     position: absolute;
     top: 6.25%;
-    width: 20%;
-  }
-
-  #logo img {
-    width: 100%;
-    height: 10%;
-  }
-
-  #navlink_desktop {
-    display: none;
-  }
-
-  #navlink_mobile {
-    position: absolute;
-    top: 15%;
-    width: 90%;
-    display: none;
-    text-align: center;
-    z-index: 1;
-  }
-
-  .header a.icon {
-    display: block;
-    position: absolute;
-    right: 5.5%;
-    top: 6.25%;
-    color: white;
-    font-size: 4vw;
-  }
-
-  .header a.icon:hover {
-    color: #4e9457;
-  }
-
-  #navlink_mobile a {
-    background-color: white;
-    display: block;
-    padding: 2% 0%;
-    font-size: 1.7vw;
-    letter-spacing: 2px;
-    font-family: "Montserrat";
-    font-weight: 600;
-    color: black;
-    list-style: none;
-    border: 1px solid black;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  #navlink_mobile a:hover {
-    color: #4e9457;
-  }
-
-  #logo_name {
-    position: absolute;
-    top: 25%;
-    text-align: center;
-  }
-
-  #logo_name h1 {
-    font-size: 12vw;
-    color: #ffffff;
-    font-family: "Raleway";
-    font-weight: 500;
-  }
-
-  #wrapper {
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-  }
-
-  button.scroll_down {
-    position: absolute;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    height: 50px;
-    width: 30px;
-    bottom: 60px;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    outline: none;
-  }
-  button.scroll_down:before {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
-    background-color: #fff;
-    border-radius: 100%;
-    -webkit-animation: scroll_down_btn-animation 2s infinite;
-    animation: scroll_down_btn-animation 2s infinite;
-    box-sizing: border-box;
   }
 
-  @keyframes scroll_down_btn-animation {
-    0% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-      opacity: 0;
-    }
-    40% {
-      opacity: 1;
-    }
-    80% {
-      -webkit-transform: translate(0, 20px);
-              transform: translate(0, 20px);
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
+  #navlink_mobile {
+    top: 20%;
+    width: 100%;
   }
 
-  @-webkit-keyframes scroll_down_btn-animation {
-    0% {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-      opacity: 0;
-    }
-    40% {
-      opacity: 1;
-    }
-    80% {
-      -webkit-transform: translate(0, 20px);
-      transform: translate(0, 20px);
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
+  .header a.icon {
+    top: 8%;
+    font-size: 6.5vw;
+  }
+
+  #navlink_mobile a {
+    padding: 4% 0%;
+    font-size: 5vw;
+  }
+
+  #logo_name h1 {
+    font-size: 15vw;
   }
 
   /* ------------------------------- CONTENT ------------------------------- */
-  .content {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0px auto;
-  }
-
-  .container {
-    width: 80%;
-    margin: 0px auto;
-  }
 
   .content .cls1 h1  {
-    width: 80%;
-    position: absolute;
-    top: 5%;
-    font-size: 7vw;
-    color: #4e9457;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-    font-family: "Raleway";
-    font-weight: 500;
+    width: 90%;
+    font-size: 9vw;
   }
 
   .content .cls2 h1  {
-    width: 80%;
-    position: absolute;
-    top: 5%;
-    font-size: 7vw;
-    color: #ffffff;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-    font-family: "Raleway";
-    font-weight: 500;
+    width: 90%;
+    font-size: 9vw;
   }
 
   .content h4 {
-    font-size: 3vw;
-    color: #000000;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-    font-family: "Raleway";
-    font-weight: 500;
+    font-size: 5vw;
   }
 
   .content .p1 {
-    font-size: 2vw;
-    letter-spacing: 2px;
-    line-height: 130%;
-    color: #959595;
-    font-family: "Montserrat";
-    font-weight: 600;
-    text-transform: uppercase;
+    font-size: 3vw;
   }
 
   .content .p2 {
-    font-size: 3vw;
-    line-height: 200%;
-    color: #000000;
-    font-family: "Raleway";
-    font-weight: 500;
+    font-size: 4vw;
   }
 
   .content a {
     padding-left: 0%;
-  }
-
-  .content button {
-    width: 50%;
-    height: 4.3%;
-    background-color: #4e9457;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    margin: 0px auto;
-    border:none;
-    line-height:0.5em;
-  }
-
-  .content button:focus {
-    outline: none !important;
-    color: #ffffff;
-  }
-
-  a {
-    font-size: 1.9vw;
+    font-size: 3vw;
     letter-spacing: 2px;
     color: #ffffff;
     font-family: "Montserrat";
@@ -312,139 +94,38 @@
   /* ------------------------------- Our Group ------------------------------- */
   #our_group {
     position: relative;
-    height: 1800px;
-  }
-
-  #our_group img {
-    display: none;
+    height: 2200px;
   }
 
   #comp {
     position: absolute;
-    top: 26%;
-    width: 85%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .companies {
-    display: inline-block;
-    padding: 0% 4%;
-  }
-
-  #description {
-    position: absolute;
-    top: 50%;
-    width: 80%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    top: 22%;
     text-align: center;
   }
 
-  #our_group button {
-    position: absolute;
-    top: 85%;
-  }
-
-  #our_group #button_hr {
-    display: none;
+  #description {
+    top: 55%;
   }
 
   /* ------------------------------- Services ------------------------------- */
   #services {
     background-color: #4e9457;
     position: relative;
-    height: 2000px;
+    height: 2200px;
   }
 
-  #services img {
-    display: none;
-  }
-
-  #area1 {
-    position: absolute;
-    top: 18%;
-    width: 75%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    height: 21%;
-    padding: 4%;
-  }
-
-  #area2 {
-    position: absolute;
-    top: 45%;
-    width: 75%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    height: 21%;
-    padding: 4%;
-  }
-
-  #area3 {
-    position: absolute;
-    top: 72%;
-    width: 75%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    height: 21%;
-    padding: 4%;
-  }
-
-  .area:hover {
-    background-color: white;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .area .p1 {
-    color: #ffffff;
-  }
-  .area:hover .p1 {
-    color: #959595;
-  }
-
-  .area .p2 {
-    text-transform: none;
-    line-height: 110%;
-    color: #ffffff;
-  }
-  .area:hover .p2 {
-    color: #000000;
+  .area {
+    height: 22%;
+    padding: 7%;
   }
 
   .area h2 {
-    font-size: 3vw;
-    color: #ffffff;
-    font-family: "Raleway";
-    font-weight: 500;
-  }
-  .area:hover h2 {
-    color: #4e9457;
-  }
-
-  .area hr {
-    width: 100%;
-    height: 1px;
-    border: none;
-    background-color: #ffffff;
-  }
-  .area:hover hr {
-    background-color: #000000;
+    font-size: 6vw;
   }
 
   .area i {
     padding-right: 5%;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
 
   .area:hover i {
@@ -454,67 +135,28 @@
   /* ------------------------------- Our team ------------------------------- */
   #our_team {
     position: relative;
-    height: 2000px;
+    height: 1700px;
   }
 
-  #our_team #our_team_bg {
-    display: none;
+  #our_team h1 {
+    position: absolute;
+    top: 6%;
   }
 
   #team_section1 {
-    position: absolute;
-    top: 27%;
-    width: 80%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    top: 30%;
   }
 
   #team_section2 {
-    position: absolute;
-    top: 47%;
-    width: 80%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    top: 52%;
   }
 
   #team_section3 {
-    position: absolute;
-    top: 67%;
-    width: 80%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .char {
-    width: 30%;
-    max-height: 300px;
-    margin-left: 10%;
-    float: left;
-  }
-
-  .char:last-child {
-    width: 30%;
-    margin-top: 15%;
-    margin-right: 10%;
-    float: right;
-  }
-
-  .char h4 {
-    color: #343434;
-    margin: 2% 0%;
+    top: 74%;
   }
 
   .char .p1 {
-    font-size: 1.8vw;
-    color: #959595;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 2vw;
   }
 
   /* ------------------------------- References ------------------------------- */
@@ -523,350 +165,129 @@
   }
 
   #references .crop {
-    height: 1800px;
-    width: 170%;
+    height: 1300px;
   }
 
-  #references #opacity {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(49, 49, 49, 0.5);
-  }
-
-  #references button {
-    position: absolute;
-    top: 85%;
+  .crop.crop-square img {
+    width: 500%;
+    margin: 0 0 0 -200%;
   }
 
   #references #desc {
-    position: absolute;
-    top: 33%;
-    width: 85%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-  }
-
-  #references #desc .p2 {
-    color: #ffffff;
+    top: 26%;
   }
 
   /* ------------------------------- Impressum ------------------------------- */
   #impressum {
     position: relative;
-    height: 1800px;
-  }
-
-  #impressum img {
-    display: none;
+    height: 2000px;
   }
 
   #impressum #text {
-    position: absolute;
-    top: 20%;
-    width: 85%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-  }
-
-  #impressum #text .p2 {
-    color: #959595;
+    top: 13%;
   }
 
   #impressum #text a {
-    font-family: "Raleway";
-    font-size: 2.7vw;
-    text-transform: lowercase;
-    text-decoration: none;
-    color: #959595;
+    font-size: 4vw;
   }
 
   #impressum #info {
-    position: absolute;
-    top: 50%;
-    width: 85%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-  }
-
-  #impressum #info #location .p2 {
-    color: #343434;
-  }
-
-  #impressum #info #ctme {
-    margin-top: 10%;
-  }
-
-  #ctme .p2 {
-    color: #959595;
-  }
-
-  #info span {
-    color: #343434;
+    top: 52%;
   }
 
   #info #ctme a {
-    font-family: "Raleway";
-    font-size: 2.7vw;
-    text-transform: lowercase;
-    color: #343434;
-  }
-
-  #info #tax {
-    margin-top: 10%;
-  }
-
-  #info #tax .p2 {
-    color: #959595;
-  }
-
-  #impressum hr {
-    position: absolute;
-    top: 100%;
-    width: 85%;
-    height: 1px;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    background-color: #343434;
-    border: none;
-    z-index: 1;
+    font-size: 4vw;
   }
 
   /* ------------------------------- Contact ------------------------------- */
   #contact {
     position: relative;
-    height: 1800px;
-  }
-
-  #contact #impressum_bg {
-    display: none;
+    height: 2200px;
   }
 
   #contact #form {
-    position: absolute;
-    top: 30%;
-    width: 85%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  #form form {
-    width: 93%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    top: 18%;
   }
 
   #form input {
-    display: block;
-    width: 100%;
-    max-height: 130px;
-    padding: 1% 0%;
-    border: none;
-    border-bottom: 1px solid #343434;
-    font-size: 3vw;
-    color: #959595;
-    font-family: "Raleway";
-    font-weight: 500;
-    margin-bottom: 1%;
-  }
-
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-      transition: background-color 5000s ease-in-out 0s;
+    font-size: 5vw;
   }
 
   #form textarea {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #343434;
-    font-size: 3vw;
-    color: #959595;
-    font-family: "Raleway";
-    font-weight: 500;
-    margin-bottom: 15%;
-    padding-top: 1%;
-    resize: none;
-  }
-
-  #form input:focus {
-    outline: none !important;
-    border-bottom: 1px solid #4e9457;
-    color: #000000;
-  }
-
-  #form textarea:focus {
-    outline: none !important;
-    border-bottom: 1px solid #4e9457;
-    color: #000000;
-  }
-
-  #form button {
-    position: absolute;
-    top: 95%;
-    width: 60%;
-    height: 10%;
-  }
-
-  #form button:focus {
-    outline: none !important;
-    color: #ffffff;
+    font-size: 5vw;
+    padding-top: 5%;
   }
 
   #contact #image {
-    width: 30%;
+    width: 50%;
     position: absolute;
-    top: 75%;
+    top: 63%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
   }
 
   #contact #social {
-    width: 46%;
+    width: 85%;
     position: absolute;
-    top: 73%;
-    left: 45%;
-  }
-
-  #social .p2 {
-    line-height: 130%;
+    top: 81%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
   }
 
   #social_links {
-    width: 100%;
-    margin-top: 16%;
-  }
-
-  #social_links .p1 {
-    text-transform: uppercase;
-    color: #959595;
+    margin-top: 10%;
   }
 
   #social_links a {
-    text-decoration: none;
-    color: #959595;
-    padding-left: 6%;
-  }
-
-  #social_links a:first-child {
-    padding-left: 0%;
+    font-size: 4vw;
   }
 
   /* ------------------------------- FOOTER ------------------------------- */
   .footer {
     position: relative;
-    height: 600px;
+    height: 800px;
     margin-bottom: -4px;
     background-color: #4e9457;
   }
 
-  .footer #footer_bg {
-    display: none;
-  }
-
   .footer .p2 {
-    position: absolute;
-    font-size: 2.6vw;
-    text-align: center;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    top: 10%;
-    width: 85%;
-    color: #ffffff;
+    font-size: 4vw;
   }
 
   .footer #subscribe_form {
-    position: absolute;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    top: 30%;
-    width: 85%;
-    border-bottom: 1px solid #ffffff;
+    top: 35%;
   }
 
   #subscribe_form input {
-    width: 90%;
-    max-height: 130px;
-    padding: 1% 0%;
-    border:none;
-    background-color: #4e9457;
-    font-size: 3vw;
-    color: #ffffff;
-    font-family: "Raleway";
-    font-weight: 500;
-  }
-
-  #subscribe_form ::placeholder {
-    color: #ffffff;
-  }
-
-  #subscribe_form input:focus {
-    outline: none !important;
-    color: #ffffff;
-  }
-
-  #subscribe_form button {
-    background-color: #4e9457;
-    width: 8%;
-    max-height: 125px;
-    border: none;
-    cursor: pointer;
-  }
-
-  #subscribe_form button:focus {
-    outline: none !important;
-    color: #ffffff;
+    font-size: 5vw;
   }
 
   #subscribe_form i {
-    color: white;
-    font-size: 2.5vw;
-    padding-left: 80%;
+    font-size: 5vw;
   }
 
   .footer #logo {
     position: absolute;
-    top: 52%;
-    width: 15%;
+    top: 58%;
+    width: 25%;
+    margin-left: 20%;
   }
 
   .footer #navlink {
     position: absolute;
-    top: 50%;
-    left: 70%;
-    width: 20%;
-    text-align: right;
+    top: 56%;
+    left: 50%;
+    width: 30%;
+    text-align: center;
   }
 
   .footer #navlink a {
-    display: block;
-    line-height: 200%;
-    color: #ffffff;
+    font-size: 3vw;
   }
 
   /* ------------------------------- BASE ------------------------------- */
@@ -877,30 +298,31 @@
     background-color: #66ad70;
   }
 
-  .base img {
-    margin-bottom: -5px;
-  }
-
-  .base p {
-    font-size: 1.8vw;
-    color: #ffffff;
+  .base .p2 {
+    font-size: 3vw;
   }
 
   .alignleft {
     position: absolute;
-    top: 20%;
-    left: 8%;
+    top: 1%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
   }
   .alignleft a {
-    text-transform: none;
-    color: #ffffff;
-    font-family: "Raleway";
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
 
   .alignright {
     position: absolute;
-    top: 20%;
-    right: 8%;
+    top: 30%;
+    left: auto;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
   }
 }

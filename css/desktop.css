@@ -221,6 +221,10 @@
     border:none;
   }
 
+  #our_group button:focus {
+    outline: none !important;
+  }
+
   .content button a {
     font-size: 1.1vw;
   }
@@ -251,10 +255,6 @@
   #our_group button {
     position: absolute;
     top: 80.5%;
-  }
-
-  #our_group button:focus {
-    outline: none !important;
   }
 
   #our_group #button_hr {
@@ -410,11 +410,6 @@
     height: 6%;
   }
 
-  #references button:focus {
-    outline: none !important;
-    color: #ffffff;
-  }
-
   #references #desc {
     position: absolute;
     top: 40%;
@@ -567,10 +562,6 @@
     top: 100%;
     width: 62%;
     height: 8%;
-  }
-
-  #form button:focus {
-    outline: none !important;
   }
 
   #contact #image {

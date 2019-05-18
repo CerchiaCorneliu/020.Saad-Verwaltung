@@ -1,5 +1,16 @@
 # 020.Saad-Verwaltung
 
+
+References:
+
+Scroll Down Animation
+https://codepen.io/alexandr-kazakov/pen/PmYamP
+
+Responsive Crop Image
+https://codepen.io/danielcktan/pen/rVrZxz
+
+
+
 Working hours
 
 May 6th 2019
@@ -22,4 +33,7 @@ May 11st 2019
 
 May 12nd 2019
 	CSS Responsive/JS: 8:00 - 15:00
+
+
+
 
