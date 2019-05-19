@@ -84,9 +84,9 @@
     display: block;
     position: absolute;
     right: 5.5%;
-    top: 6.25%;
+    top: 6%;
     color: white;
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .header a.icon:hover {
